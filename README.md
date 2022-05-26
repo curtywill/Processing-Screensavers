@@ -1,2 +1,2 @@
 # Processing-Screensavers
-Small collection of screensavers made in Processing4
+Small collection of screensavers made in Processing 4
