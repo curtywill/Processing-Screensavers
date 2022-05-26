@@ -6,7 +6,7 @@ float spacing = 40;
 int xSize, ySize, zSize;
 int xSpot, ySpot, zSpot;
 boolean [][][] grid;
-PVector colour;
+color c;
 PVector step;
 
 void setup() {
@@ -33,7 +33,7 @@ void reset() {
     ySpot = floor(random(ySize));
     zSpot = floor(random(zSize));
   } while (grid[xSpot][ySpot][zSpot]); // loop until an empty spot is found
-  colour = new PVector(random(255), random(255), random(255));
+  c = color(random(255), random(255), random(255));
 }
 
 PVector getStep() {
@@ -64,7 +64,7 @@ void draw() {
     reset();
     angle = random(-PI/4, PI/4);
   }
-  fill(colour.x, colour.y, colour.z);
+  fill(c);
   stroke(255);
   rotateY(angle);
   pushMatrix();
